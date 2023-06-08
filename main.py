@@ -5,13 +5,6 @@ def main():
     st.title("Web App Video Game Sales")
     st.write("Welcome to Web App Video Game Sales!")
 
-    st.text("Berikut merupakan dataset penjualan video game")
-
-    st.header("Data")
-    excel_file = "C:/Users/Latifa Firdausi/Documents/pasdjaya.csv"
-    df = pd.read_csv(excel_file)
-    st.dataframe(df)
-
     st.header("Grafik")
     sales_x = st.selectbox("Pilih wilayah penjualan (X)", ["North America (NA)", "Europe (EU)", "Japan (JP)", "Other", "Global"], key='sales_x')
     sales_y = st.selectbox("Pilih wilayah penjualan (Y)", ["North America (NA)", "Europe (EU)", "Japan (JP)", "Other", "Global"], key='sales_y')
